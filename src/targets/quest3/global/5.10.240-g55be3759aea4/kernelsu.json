@@ -110,7 +110,7 @@
       "signed with it can be recognised at all. It was absent for every build",
       "made while the key was RSA-4096."
     ],
-    "url": "https://github.com/WitAqua-tools/Root-My-Device-Payloads/releases/download/modules-20260803-2aa87cc/kernelsu-quest3.ko",
-    "sha256": "39933d93a871131383336c60a61a950aa277634f6d650a65243397a3c8de2877"
+    "url": "https://github.com/WitAqua-tools/Root-My-Device-Payloads/releases/download/modules-20260829-37bb2a6/kernelsu-quest3.ko",
+    "sha256": "e1489417bc5faa6f18684efcc8989ab104511c9e5c319fcae5a828520e6c07cc"
   }
 }
