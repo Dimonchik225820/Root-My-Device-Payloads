@@ -1,0 +1,16 @@
+{
+  "$comment": [
+    "KernelSU late-load build for Sharp A202SH (android12-5.10 GKI).",
+    "ddkImage is the standard android12-5.10 DDK — this is a true GKI device",
+    "(unlike quest3 which uses Meta's own kernel), so the DDK module should",
+    "load without the source-tree workaround quest3 required.",
+    "patchSets is empty: no Samsung/vendor-specific hardening on this device."
+  ],
+  "id": "a202sh",
+  "kmi": "android12-5.10",
+  "ddkImage": "ghcr.io/ylarod/ddk-min:android12-5.10-20260313",
+  "kernelRelease": "5.10.81-android12-9-ge4225e527617-ab8339909",
+  "patchSets": [],
+  "config": []
+}
+
